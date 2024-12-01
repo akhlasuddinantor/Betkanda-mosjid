@@ -37,20 +37,81 @@ body {
     top: 25%;
     left: 50%;
     transform: translate(-50%,-50%);
+    text-align: center;
 }
 .heading-primary{
     color: #fff;
     text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 30px;
 }
 .heading-primary-main{
 display: block;
 font-size: 50px;
 font-weight: 400;
 letter-spacing: 10px;
+animation-name: moveinleft;
+animation-duration: 2s;
 }
 .heading-primary-sub{
     display: block;
     font-size: 15px;
     font-weight: 300;
     letter-spacing: 5px;
+    animation-name: moveinright;
+    animation-duration: 2s
+}
+
+@keyframes moveinleft{
+    0%{
+        opacity: 0;
+        transform: translate(-30%);
+    }
+    80%{
+        transform: translate(2%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveinright{
+    0%{
+        opacity: 0;
+        transform: translate(20%);
+    }
+    80%{
+        transform: translate(-2%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+
+
+}
+.btn:hover{
+    transform: translate(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+.btn:active{
+    transform: translate(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+.btn-white{
+    background-color: #fff;
+    color: #777;
+     
 }
