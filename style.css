@@ -9,49 +9,48 @@ body {
     font-size: 14px;
     line-height: 1.5;
     color: #777;
+    margin: 8px;
+
 }
 .header{
-    height: 75vh;
+    height: 55vh;
     background-image:linear-gradient(to right bottom,
-     rgba(126,213,111, 0.8),
-     rgba(32, 153, 111, 0.8) ) ,
+     rgba(126,213,111, 0.7),
+     rgba(32, 153, 111, 0.7) ) ,
     url(m2.jpg);
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 250px,  0 70%);
+    clip-path: polygon(0 0, 100% 0, 100% 280px,  0 100%);
 
 }
-.logo-box{
+.header-logo-box{
     position: absolute;
     top: 20px;
     left: 20px;
 }
-.logo{
+.header-logo{
     height: 40px;
 }
-
-
-
-.text-box{
+.header-text-box{
     position: absolute;
     top: 25%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
 }
-.heading-primary{
+.header-heading-primary{
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 30px;
 }
 .heading-primary-main{
-display: block;
-font-size: 50px;
-font-weight: 400;
-letter-spacing: 10px;
-animation-name: moveinleft;
-animation-duration: 2s;
+    display: block;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    animation-name: moveinleft;
+    animation-duration: 2s;
 }
 .heading-primary-sub{
     display: block;
@@ -115,3 +114,138 @@ animation-duration: 2s;
     color: #777;
      
 }
+
+.nav-bar{
+    margin: 10;
+    
+}
+.nav-bar-box{
+    margin: 0 auto;
+    text-align: center;
+     
+
+}
+.nav-link{
+    color: rgba(32, 153, 111, 0.7);
+    margin: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 100px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.726) ;
+
+}
+.nav-link:hover{
+    transform: translate(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+.nav-link:active{
+    transform: translate(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+/* main text box start here*/
+.main-text-box{
+    height: 60vh;
+    background-image:linear-gradient(to right bottom,
+     rgba(32, 153, 111, 0.7),
+     rgba(126,213,111, 0.7) ) ,
+    url(quran.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 18%, 100% 0, 100% 100%,  0 100%);
+}
+.div-box{  
+    margin-top: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.box-text-primary{
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+     
+}
+.box-text-head{
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    animation-name: moveinleft;
+    animation-duration: 2s;
+
+}
+.box-text-detail{
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    animation-name: moveinright;
+    animation-duration: 2s;
+    margin-bottom: 10px;
+}
+
+.b2{
+    height: 65vh;
+    background-image:linear-gradient(to  bottom,
+     rgba(242, 252, 240, 0.8),
+     rgba(32, 153, 111, 0.8) ) ,
+    url(hadith.jpg);
+    background-size: cover;
+    background-position: top;
+    display: block;
+}
+/* main text box start here*/
+
+
+
+
+
+
+
+
+
+/* footer start   */
+.footer{
+    padding: 20px;
+    height: 70vh;
+    background-image:linear-gradient(to  bottom,
+     rgba(126,213,111, 0.6),
+     rgba(32, 153, 111, 0.95) ) ,
+    url(mosque1.jpg);
+    background-size: cover;
+    background-position: top;
+    /* clip-path: polygon(0 0,  50% 10%, 100% 0, 100% 100%,  0 100%); */
+    display: block;
+}
+.footer-box{
+    margin-top: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    text-align: center;
+}
+.f-icon{
+    margin: 5px;
+    height: 60px;
+}
+.footer-text{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.copyright{
+    font-size: 6px;
+    margin-top: 85px ; 
+    
+}
+ 
+
